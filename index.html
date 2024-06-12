@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agt Technology Limited</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="logo.png" alt="Agt Technology Limited Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#solutions">Solutions</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Welcome to Agt Technology Limited</h1>
+            <p>Innovative Solutions for a Digital World</p>
+            <a href="#services" class="btn">Get Started</a>
+        </div>
+    </section>
+
+    <!-- About Us -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Agt Technology Limited is a leading tech company dedicated to providing innovative solutions and services. Our mission is to transform businesses with cutting-edge technology and exceptional service.</p>
+            <p><strong>Mission:</strong> To deliver state-of-the-art technology solutions that drive business success.</p>
+            <p><strong>Values:</strong> Innovation, Integrity, Customer Focus, Excellence</p>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="service-list">
+                <div class="service-item">
+                    <h3>Consulting</h3>
+                    <p>Expert advice to optimize your business processes and technology infrastructure.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Development</h3>
+                    <p>Custom software development tailored to your specific needs.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Cloud Solutions</h3>
+                    <p>Scalable cloud solutions to enhance your business operations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solutions -->
+    <section id="solutions" class="solutions">
+        <div class="container">
+            <h2>Our Solutions</h2>
+            <div class="solutions-list">
+                <div class="solution-item">
+                    <h3>AI & Machine Learning</h3>
+                    <p>Harness the power of AI to drive business insights and innovation.</p>
+                </div>
+                <div class="solution-item">
+                    <h3>Cybersecurity</h3>
+                    <p>Comprehensive security solutions to protect your data and infrastructure.</p>
+                </div>
+                <div class="solution-item">
+                    <h3>IoT Integration</h3>
+                    <p>Seamless IoT solutions to connect and manage your devices.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2>What Our Clients Say</h2>
+            <div class="testimonial-list">
+                <div class="testimonial-item">
+                    <p>"Agt Technology Limited transformed our business with their innovative solutions. Highly recommend!" - Client A</p>
+                </div>
+                <div class="testimonial-item">
+                    <p>"Their team is professional, knowledgeable, and always delivers on time." - Client B</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form action="submit_form.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit" class="btn">Submit</button>
+            </form>
+            <div class="contact-info">
+                <p><strong>Address:</strong> 16 Fasanya Street, Fadeyi, Lagos</p>
+                <p><strong>Email:</strong> agttechnology@outlook.com</p>
+                <p><strong>Phone:</strong> (234) 816-714-3266 </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Agt Technology Limited. All rights reserved.</p>
+            <div class="social-media">
+                <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+                <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+                <a href="#"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+            </div>
+            <form action="subscribe.php" method="post" class="newsletter">
+                <label for="newsletter-email">Subscribe to our newsletter:</label>
+                <input type="email" id="newsletter-email" name="newsletter-email" required>
+                <button type="submit" class="btn">Subscribe</button>
+            </form>
+        </div>
+    </footer>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+        }
+
+        header .logo img {
+            height: 50px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .hero {
+            background: #f4f4f4;
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        .hero h1 {
+            margin: 0;
+        }
+
+        .hero .btn {
+            background: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 50px 0;
+        }
+
+        .services, .solutions, .testimonials {
+            background: #f4f4f4;
+        }
+
+        .service-list, .solutions-list, .testimonial-list {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .service-item, .solution-item, .testimonial-item {
+            width: 30%;
+        }
+
+        .contact-info {
+            margin-top: 20px;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .social-media a {
+            margin: 0 10px;
+        }
+
+        .newsletter {
+            margin-top: 20px;
+        }
+    </style>
+</body>
+</html>
