@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f8fafc; /* Slate 50 */
+  --foreground: #0f172a; /* Slate 900 */
+  --primary: #0d9488; /* Teal 600 */
+  --primary-foreground: #ffffff;
+  --secondary: #f1f5f9;
+  --accent: #0f766e;
+  --muted: #f1f5f9;
+  --border: rgba(15, 23, 42, 0.08);
+  --grid-color: rgba(15, 23, 42, 0.03);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-accent: var(--accent);
+  --color-muted: var(--muted);
+  --color-border: var(--border);
+  --font-sans: var(--font-geist-sans);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground antialiased selection:bg-primary/20 selection:text-primary;
+    font-family: var(--font-sans);
+  }
+}
+
+.technical-grid {
+  background-image: 
+    linear-gradient(to right, var(--grid-color) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--grid-color) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+.glass-nav {
+  @apply bg-white/70 backdrop-blur-md border-b border-slate-900/5;
+}
+
+.bento-card {
+  @apply bg-white border border-slate-900/5 rounded-xl overflow-hidden transition-all duration-300 hover:border-primary/20 hover:shadow-xl hover:shadow-slate-200/50;
+}
+
+.intuitive-input {
+  @apply bg-slate-100/50 border border-slate-200 rounded-lg px-4 py-3 focus:border-primary focus:ring-2 focus:ring-primary/10 focus:bg-white focus:outline-none transition-all w-full text-sm placeholder:text-slate-400;
+}
